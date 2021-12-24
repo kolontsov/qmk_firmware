@@ -12,6 +12,8 @@
 #define LOWER MO(_LOWER)
 #define ADJUST MO(_ADJUST)
 
+#define LANG LGUI(KC_SPC)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_5x6(
@@ -22,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     KC_GRV, KC_HYPR,                                                KC_LBRC, KC_RBRC,
                                       KC_LGUI, _______,                 _______, KC_BSPC,
                                       KC_LALT, RAISE,                   LOWER,   KC_RGUI,
-                                      LGUI(KC_SPC), KC_SPC,             KC_ENT,  _______
+                                      LANG, KC_SPC,                     KC_ENT,  _______
   ),
 
   [_LOWER] = LAYOUT_5x6(
