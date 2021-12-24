@@ -1,0 +1,15 @@
+COMBO_ENABLE = no	; Key combo feature
+COMMAND_ENABLE = no	; Commands for debug and configuration
+CONSOLE_ENABLE = yes	; Console for debug
+EXTRAKEY_ENABLE = yes	; Audio control and System control
+GRAVE_ESC_ENABLE = no	; Use grave key as Escape
+KEY_LOCK_ENABLE = no	; Allow to hold down specific key for a long period of time
+LTO_ENABLE = yes	; Enables Link Time Optimization (LTO) when compiling
+MOUSEKEY_ENABLE = no	; Audio control and System control
+NKRO_ENABLE = no	; N-key rollover
+RGBLIGHT_ENABLE = yes	; Enable keyboard underlight functionality
+SPACE_CADET_ENABLE = no	; Space Cadet Shift
+STENO_ENABLE = no	; Stenography
+SWAP_HANDS_ENABLE = no	; Support for hands swapping
+TAP_DANCE_ENABLE = no	; Tap Dance
+UNICODEMAP_ENABLE = no	; Unicode chars
