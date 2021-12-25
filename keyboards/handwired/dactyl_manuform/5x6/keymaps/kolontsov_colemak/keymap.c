@@ -17,17 +17,30 @@
 
 // https://precondition.github.io/home-row-mods#cags
 
+//#define HOME_ROW_MOD 1
+
+#ifdef HOME_ROW_MOD
 // Left-hand home row mods
 #define HOME_A LCTL_T(KC_A)
 #define HOME_R LALT_T(KC_R)
 #define HOME_S LGUI_T(KC_S)
 #define HOME_T LSFT_T(KC_T)
-
 // Right-hand home row mods
 #define HOME_N RSFT_T(KC_N)
 #define HOME_E RGUI_T(KC_E)
 #define HOME_I LALT_T(KC_I)
 #define HOME_O RCTL_T(KC_O)
+#else
+#define HOME_A KC_A
+#define HOME_R KC_R
+#define HOME_S KC_S
+#define HOME_T KC_T
+// Right-hand home row mods
+#define HOME_N KC_N
+#define HOME_E KC_E
+#define HOME_I KC_I
+#define HOME_O KC_O
+#endif
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -37,9 +50,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_LCTL, HOME_A, HOME_R, HOME_S, HOME_T, KC_G,        KC_M, HOME_N, HOME_E,  HOME_I, HOME_O,  KC_QUOT,
      KC_LSFT, KC_Z,   KC_X,   KC_C,   KC_D,   KC_V,        KC_K, KC_H,   KC_COMM, KC_DOT, KC_SLSH, KC_BSLASH,
                       KC_GRV, KC_HYPR,                                   KC_LBRC, KC_RBRC,
-                                      KC_LGUI, _______,    _______, KC_BSPC,
+                                      KC_SPC , _______,    _______, KC_ENT,
                                         KC_LALT, LOWER,    RAISE,   KC_RGUI,
-                                        LANG, KC_SPC,      KC_ENT,  ALFRED
+                                        LANG, KC_LGUI,     KC_BSPC,  ALFRED
   ),
 
   [_LOWER] = LAYOUT_5x6(
