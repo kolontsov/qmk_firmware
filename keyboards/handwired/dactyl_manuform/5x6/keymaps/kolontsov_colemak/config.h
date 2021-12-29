@@ -9,6 +9,9 @@
 //#define MASTER_LEFT
 //#define MASTER_RIGHT
 
+#define USB_POLLING_INTERVAL_MS 1
+#define QMK_KEYS_PER_SCAN 12
+
 // Underglow
 #define RGB_DI_PIN D1
 #define RGBLED_NUM 24    // Number of LEDs
